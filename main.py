@@ -2,7 +2,7 @@ from autogen import AssistantAgent, UserProxyAgent, config_list_from_json
 import autogen
 import openai
 
-openai.api_key = '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'
+openai.api_key = 'ADD_API_KEY'
 webhook_url = 'https://falling-fire-5834.tines.com/webhook/838cf4b997f58f02354604972dae8875/b3884ec74bf13e2933695619cc44034a'
 
 # Load LLM inference endpoints from an env variable or a file
@@ -22,6 +22,7 @@ config_list = autogen.config_list_from_json(
 #user_proxy.initiate_chat(assistant, message="Plot a chart of NVDA and TESLA stock price change YTD.")
 # This initiates an automated chat between the two agents to solve the task
 
+# Test to generate images
 #response = openai.Image.create(
 #  prompt="a white siamese cat",
 #  n=1,
